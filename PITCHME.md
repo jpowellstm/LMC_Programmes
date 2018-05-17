@@ -1,7 +1,10 @@
-two numbers
+@title[two_numbers]
+###two numbers
 
 ---
-one to ten up
+@title[one to ten up]
+###one to ten up
 
 ---
-one to ten down
+@title[one to ten down]
+###one to ten down
