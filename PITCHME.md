@@ -44,13 +44,13 @@ count   DAT
 @[2](store the value of the accumulator into the memory location count)
 @[3](output the value of the accumulator)
 @[4](setup a loop with the count memory location)
-@[5](add one to the accumulator)
-@[6](store the value of the accumulator to the count memory location)
-@[7](subtract 10 from the acculator)
-@[8](check if the accumulator is zero or positive and go to loopend if it is)
-@[9](loop back to the loopstart memory address)
-@[10](halt if the BRP condition was met)
-@[11-13](setup data locations)
+@[5-6](add one to the accumulator and output it)
+@[7](store the value of the accumulator to the count memory location)
+@[8](subtract 10 from the acculator)
+@[9](check if the accumulator is zero or positive and go to loopend if it is)
+@[10](loop back to the loopstart memory address)
+@[11](halt if the BRP condition was met)
+@[12-14](setup data locations)
 
 ---
 @title[one to ten down]
