@@ -8,6 +8,10 @@ INP
 SUB 90
 OUT
 ```
+
+@[1]
+@[2]
+
 ---
 @title[one to ten up]
 ### one to ten up
