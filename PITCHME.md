@@ -92,4 +92,23 @@ count   DAT
 
 Write a program to input a number then count up to that number in steps of 2, outputting the sequence.
 
+```
+INP
+STA input
+
+loopstart LDA count
+        ADD two 
+        OUT
+        STA count
+        SUB input
+        BRP loopend 
+        BRA loopstart
+loopend HLT
+
+one     DAT 1
+two     DAT 2
+input   DAT
+count   DAT
+```
+
 
