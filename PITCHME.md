@@ -27,7 +27,6 @@ Write a program to output the numbers 1 to 10 in ascending order.
 LDA one
 STA count
 OUT
-
 loopstart LDA count
         ADD one
         OUT
@@ -36,7 +35,6 @@ loopstart LDA count
         BRP loopend
         BRA loopstart
 loopend HLT
-
 one     DAT 1
 ten     DAT 10
 count   DAT
