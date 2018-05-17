@@ -55,3 +55,33 @@ count   DAT
 ---
 @title[one to ten down]
 ### one to ten down
+
+Write a program to output the numbers 1 to 10 in descending order.
+
+```
+LDA ten
+STA count
+OUT
+loopstart LDA count
+        SUB one
+        BRZ loopend
+        OUT
+        STA count
+        BRA loopstart
+loopend HLT
+one     DAT 1
+ten     DAT 10
+count   DAT
+```
+
+@[1](load the memory location ten into the accumulator)
+@[2](store the value of the accumulator into the memory location count)
+@[3](output the value of the accumulator)
+@[4](setup a loop with the count memory location)
+@[5](subtract 1 from the accumulator)
+@[6](check if the accumulator is zero and go to loopend if it is)
+@[7](output the value of the accumulator)
+@[8](store the value of the accumulator to the count memory location)
+@[9](loop back to the loopstart memory address)
+@[10](halt if the BRP condition was met)
+@[11-13](setup data locations)
