@@ -1,0 +1,5 @@
+INP
+STA 90
+INP
+SUB 90
+OUT
