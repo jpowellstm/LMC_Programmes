@@ -85,3 +85,11 @@ count   DAT
 @[9](loop back to the loopstart memory address)
 @[10](halt if the BRP condition was met)
 @[11-13](setup data locations)
+
+---
+@title[count_in_twos]
+### count in twos
+
+Write a program to input a number then count up to that number in steps of 2, outputting the sequence.
+
+
