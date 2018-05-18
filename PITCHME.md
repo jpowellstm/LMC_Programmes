@@ -154,5 +154,5 @@ one     DAT 1
 @[8-10](load the count to the accumulator, add one to it and store it back in the count memory location)
 @[11-12](subtract the input number from the accumulator and branch to loopend if it's positive)
 @[13](go back to the start of the loop)
-@[14](the end loop condition)
-@[15-19](setup data locations)
+@[14-16](the end loop condition, load output, output it and halt)
+@[17-21](setup data locations)
