@@ -23,7 +23,7 @@ OUT
 
 Write a program to output the numbers 1 to 10 in ascending order.
 
-```
+```as
 LDA one
 STA count
 OUT
@@ -58,7 +58,7 @@ count   DAT
 
 Write a program to output the numbers 1 to 10 in descending order.
 
-```
+```as
 LDA ten
 STA count
 OUT
@@ -92,7 +92,7 @@ count   DAT
 
 Write a program to input a number then count up to that number in steps of 2, outputting the sequence.
 
-```
+```as
 INP
 STA input
 loopstart LDA count
@@ -124,7 +124,7 @@ count   DAT
 
 Write a program that will input two numbers and multiply them.
 
-```
+```as
 INP
 STA input1
 INP
