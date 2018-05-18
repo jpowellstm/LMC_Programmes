@@ -156,3 +156,47 @@ one     DAT 1
 @[13](go back to the start of the loop)
 @[14-16](the end loop condition, load output, output it and halt)
 @[17-21](setup data locations)
+
+---
+@title[multiply two numbers extended]
+##### multiply two numbers extended
+
+Extend the program above that it will let the user repeatedly input and multiply pairs of numbers, only stopping if a zero is entered.
+
+```
+start LDA zero
+      STA output
+      STA count
+      INP
+      BRZ end
+      STA input1
+      INP
+      BRZ end
+      STA input2
+loopstart LDA output
+        ADD input2
+        STA output
+        LDA count
+        ADD one
+        STA count
+        SUB input1
+        BRP loopend 
+        BRA loopstart        
+loopend LDA output
+        OUT
+        BRA start
+end HLT     
+input1  DAT
+input2  DAT
+count   DAT
+output  DAT 
+one     DAT 1
+zero    DAT 0
+```
+
+@[1-3](initialise the output and count memory locations to zero)
+@[4-9](take input from the user, if zero branch to the end if not store them in memory)
+@[10-19](same as the previous programme)
+@[20-23](same as the previous programme, but return to start instead of halting)
+@[24](halt the programme)
+@[25-30](setup data locations)
