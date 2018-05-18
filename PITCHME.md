@@ -196,7 +196,7 @@ zero    DAT 0
 
 @[1-3](initialise the output and count memory locations to zero)
 @[4-9](take input from the user, if zero branch to the end if not store them in memory)
-@[10-19](same as the previous programme)
-@[20-23](same as the previous programme, but return to start instead of halting)
-@[24](halt the programme)
-@[25-30](setup data locations)
+@[10-18](same as the previous programme)
+@[19-22](same as the previous programme, but return to start instead of halting)
+@[23](halt the programme)
+@[24-29](setup data locations)
