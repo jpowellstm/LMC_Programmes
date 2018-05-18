@@ -124,6 +124,7 @@ count   DAT
 
 Write a program that will input two numbers and multiply them.
 
+```
 INP
 STA input1
 INP
@@ -145,6 +146,7 @@ input2  DAT
 count   DAT
 output  DAT 0
 one     DAT 1
+```
 
 @[1-4](input two numbers from the user and store them to memory locations input1 and input2)
 @[5](initialise the loop and and load the output memory location to the accumulator)
