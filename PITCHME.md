@@ -54,7 +54,7 @@ count   DAT
 
 ---
 @title[one to ten down]
-### one to ten down
+##### one to ten down
 
 Write a program to output the numbers 1 to 10 in descending order.
 
@@ -88,14 +88,13 @@ count   DAT
 
 ---
 @title[count_in_twos]
-### count in twos
+##### count in twos
 
 Write a program to input a number then count up to that number in steps of 2, outputting the sequence.
 
 ```
 INP
 STA input
-
 loopstart LDA count
         ADD two 
         OUT
@@ -104,11 +103,54 @@ loopstart LDA count
         BRP loopend 
         BRA loopstart
 loopend HLT
-
 one     DAT 1
 two     DAT 2
 input   DAT
 count   DAT
 ```
 
+@[1](input a number from the user to the accumulator)
+@[2](store the number in memory location labeled by input)
+@[3](set up the loop with the count memory location)
+@[4-6](add 2 to the accumulator, output it and store it in the count memory location)
+@[7-8](subtract the input number from the accumulator and branch to loopend if it's positive)
+@[9](go back to the start of the loop)
+@[10](the end loop condition)
+@[11-14](setup data locations)
 
+---
+@title[multiply two numbers]
+##### multiply two numbers
+
+Write a program that will input two numbers and multiply them.
+
+INP
+STA input1
+INP
+STA input2
+loopstart LDA output
+        ADD input2
+        STA output
+        LDA count
+        ADD one
+        STA count
+        SUB input1
+        BRP loopend 
+        BRA loopstart
+loopend LDA output
+        OUT
+        HLT
+input1  DAT
+input2  DAT
+count   DAT
+output  DAT 0
+one     DAT 1
+
+@[1-4](input two numbers from the user and store them to memory locations input1 and input2)
+@[5](initialise the loop and and load the output memory location to the accumulator)
+@[6-7](add input2 to the accumulator and store it in the output memory location)
+@[8-10](load the count to the accumulator, add one to it and store it back in the count memory location)
+@[11-12](subtract the input number from the accumulator and branch to loopend if it's positive)
+@[13](go back to the start of the loop)
+@[14](the end loop condition)
+@[15-19](setup data locations)
