@@ -1,4 +1,12 @@
-[drag = 65 80, drop = 5,10]
+@code[drag=99, drop=center, fit=1.49, elixir](src/two_numbers.asm)
+
+@[1](Take an input from the user into the accumulator)
+@[2](Store this in memory location 90)
+@[3](Take another input from the user into the accumulator)
+@[4](Subtract the number in memory location 90 from the accumulator)
+@[5](Output the number from the accululator)
+
+
 @title[two numbers]
 ##### two numbers
 
