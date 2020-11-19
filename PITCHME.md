@@ -1,3 +1,4 @@
+[drag = 65 80, drop = 5,10]
 @title[two numbers]
 ##### two numbers
 
