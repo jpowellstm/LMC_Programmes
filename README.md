@@ -26,4 +26,10 @@ Write a program that will input two numbers and multiply them.
 
 Extend the program above that it will let the user repeatedly input and multiply pairs of numbers, only stopping if a zero is entered.
 
+##### convert integer to binary
+
+Take as input a positive whole number and output the binary equivalent
+
+
+
 
