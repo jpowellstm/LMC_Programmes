@@ -1,2 +1,4 @@
 gitpitch : 3.0
-theme-override : PITCHME.css
+theme: template
+highlight: tomorrow
+
