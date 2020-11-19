@@ -30,6 +30,9 @@ Extend the program above that it will let the user repeatedly input and multiply
 
 Take as input a positive whole number and output the binary equivalent
 
+##### fibonacci 
+
+Take as input the number of terms in the sequence to calulate after 1,1. Output the terms in the sequence 1,1,2,3,5,8,13...
 
 
 
